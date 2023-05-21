@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+body {
+  background-color: rgb(162, 143, 143);
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+}
+.item {
+  font-size: 50px;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.container {
+  width: 70%;
+  margin: 0 auto 50px;
+  padding: 0;
+  height: auto;
+}
+.container .header {
+  width: 50%;
+  float: left;
+  height: 510px;
+}
+.title {
+  font-size: 15px;
+  font-weight: normal;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+}
+.container .footer {
+  width: 50%;
+  float: left;
+  padding: 25px 0 0;
+  background-color: #202123;
+  height: 510px;
+}
+#firstname,
+#email,
+#password1,
+#password2 {
+  width: 300px;
+  height: 50px;
+  padding: 0 15px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 200;
+  background-color: transparent;
+  border-bottom: 5px solid #fff;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  font-family: "Raleway", sans-serif;
+  margin: 0 auto 20px;
+  display: block;
+  outline: none;
+}
+.register {
+  width: 335px;
+  margin: 30px auto;
+  display: block;
+  height: 50px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: normal;
+  color: #fff;
+  background-color: #3970b0;
+  border-color: transparent;
+  font-family: "Raleway", sans-serif;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.register:hover {
+  color: #fff;
+  background-color: #3970b0;
+}
+.title {
+  font-size: 16px;
+  font-weight: normal;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  padding-bottom: 20px;
+}
+ul {
+  text-align: center;
+}
+ul li {
+  display: inline-block;
+  margin: 0;
+}
+ul li a i.fa {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+}
+ul li a i.fa.fa-facebook:hover {
+  background-color: #3b5998;
+  color: #fff;
+}
+ul li a i.fa.fa-instagram:hover {
+  background: linear-gradient(15deg, #ffb13d, #dd277b, #4d5ed4);
+  color: #fff;
+}
+ul li a i.fa.fa-twitter:hover {
+  background-color: rgb(0, 153, 255);
+  color: #fff;
+}
+ul li a i.fa.fa-google-plus:hover {
+  background-color: #dd4b39;
+  color: #fff;
+}
+ul li a i.fa:hover {
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  -moz-animation: spin 2s linear infinite;
+  -o-animation: spin 2s linear infinite;
+  -ms-animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1080px) {
+  h1.item {
+    font-size: 40px;
+  }
+  .container {
+    width: 80%;
+    margin: 0 auto 40px;
+  }
+  p.title {
+    font-size: 14px;
+  }
+  input#firstname,
+  input#email,
+  input#password1,
+  input#password2 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 800px) {
+  input#firstname,
+  input#email,
+  input#password1,
+  input#password2 {
+    width: 260px;
+  }
+  .register {
+    width: 295px;
+  }
+}
+@media (max-width: 736px) {
+  .container .header {
+    width: 100%;
+    height: 250px;
+  }
+  .container .footer {
+    width: 100%;
+    padding: 25px 0 30px;
+  }
+  .container {
+    width: 65%;
+  }
+}
+@media (max-width: 568px) {
+  .container {
+    width: 70%;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    width: 80%;
+  }
+  .register {
+    width: 220px;
+  }
+}
+@media (max-width: 375px) {
+  .container {
+    width: 80%;
+  }
+  .register {
+    width: 225px;
+  }
+}
